@@ -182,12 +182,21 @@ nav > ul {
   padding-top: 6.25rem;
   justify-content: space-around;
 }
+
 .fact-item {
   border: 1px solid #ff900e;
   border-radius: 8px;
   padding: 2.8125rem;
   text-align: center;
+  transition: 1s ease-in transform;
 }
+.fact-item:hover {
+  transform: scale(1.4);
+  border: 0;
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+}
+
 .fact-item-title {
   font-weight: 600;
   font-size: 2.8125rem;
@@ -287,5 +296,8 @@ nav > ul {
   }
   .button span {
     font-size: 20px;
+  }
+  .fact-item:hover {
+    transform: scale(1.1);
   }
 }
